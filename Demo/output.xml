@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230630 08:55:58.575" rpa="false" schemaversion="4">
+<suite id="s1" name="TS3" source="C:\Users\vinay\PycharmProjects\Robot\Demo\TS3.robot">
+<test id="s1-t1" name="Check the frames functionality" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Frames.html</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230630 08:55:58.971" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<status status="PASS" starttime="20230630 08:55:58.970" endtime="20230630 08:56:08.495"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id:singleframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20230630 08:56:08.497" level="INFO">Selecting frame 'id:singleframe'.</msg>
+<status status="PASS" starttime="20230630 08:56:08.495" endtime="20230630 08:56:08.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/section/div/div/div/input</arg>
+<arg>tom</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230630 08:56:08.589" level="INFO">Typing text 'tom' into text field 'xpath:/html/body/section/div/div/div/input'.</msg>
+<status status="PASS" starttime="20230630 08:56:08.589" endtime="20230630 08:56:08.798"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20230630 08:55:58.969" endtime="20230630 08:56:08.799"/>
+</test>
+<status status="PASS" starttime="20230630 08:55:58.580" endtime="20230630 08:56:08.800"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TS3">TS3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
